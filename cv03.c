@@ -13,7 +13,7 @@ void swap4bytes(double *num) {
 	for (int i = 0; i < 4; i++) {
 		char temp = bytes[i];
 		bytes[i] = bytes[i + 4];
-		bytes[i + 4] = temp;			// Pointery lze procházet jako pole
+		bytes[i + 4] = temp;			// Pointery lze procházet jako pole. Jinak: *bytes(i + 4)
 	}
 }
 
